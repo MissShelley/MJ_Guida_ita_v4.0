@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Midjourney - Guida in italiano</title>
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<script src="js/w3data.js"></script>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onload="MM_preloadImages('images/MJ_Interface_UX.png')">
+<div id="outer">
+  <div id="header">
+    <h1><a href="index.html">Midjourney - Guida in italiano</a></h1>
+    <h2>Aggiornata alla V4 [Marzo 2023]</h2>
+  </div>
+  <div id="content">
+    <div id="column1">
+      <h3>Prompt</h3>
+      <h4>Un prompt è una breve frase di testo che il Bot di Midjourney interpreta per produrre un'immagine. Esso scompone le parole e le frasi di un prompt in pezzi più piccoli, chiamati token, che possono essere confrontati con i dati di addestramento e quindi utilizzati per generare un'immagine. Un prompt ben fatto può aiutare a creare immagini uniche ed emozionanti.</h4>
+      
+     	  
+	  <h5>Struttura</h5>
+	
+		<p><strong>Prompt base</strong></p>
+	  
+	  <p>Un prompt di base può essere semplice come una singola parola, una frase o un'emoji.</p>
+    <img class="myImg" src="images/MJ_Prompt_basic.png" width="400"/> <br /><br />
+
+	    
+	  
+	  <p><strong>Prompt avanzati</strong></p>
+	  
+	  <p>I prompt più avanzati possono includere uno o più <a href="promptimage.html">URL di immagini</a>, <a href="multiprompt.html">più frasi di testo</a> e uno o più <a href="parametri.html">parametri</a>.</p>
+		
+	  <p><img class="myImg" src="images/MJ Prompt.png" width="100%"></p><br />
+
+		
+		<p><span class="textbgcols1">Image prompts</span></p>
+		
+	  <p>Gli URL delle immagini possono essere aggiunti a un prompt per influenzare lo stile e il contenuto del risultato finale. Gli URL delle immagini vanno sempre nella parte anteriore di un prompt.</p><br />
+		  
+
+<p><span class="textbgcols2">Prompt di Testo</span></p>
+		
+	  <p>La descrizione testuale dell'immagine che si desidera generare. Per informazioni e suggerimenti sui prompt di testo, vedere di seguito. Promtp testuali ben scritti aiutano a generare immagini sorprendenti.</p><br />
+		
+		<p><span class="textbgcols3">Parametri</span></p>
+		
+	  <p>I parametri modificano il modo in cui viene generata un'immagine. I parametri possono modificare le proporzioni, i modelli, gli upscaler e molto altro. I parametri vanno inseriti alla fine del prompt.</p><br />
+	  
+	<hr><br />
+
+	  <h4>NOTE SUI PROMPT</h4>
+	  <h5>Lunghezza</h5>
+	  
+	  <p>I prompt possono essere molto semplici. Singole parole (o anche un'emoji!) produrranno un'immagine. I prompt molto brevi si basano molto sullo stile predefinito di Midjourney, quindi è meglio un suggerimento più descrittivo per ottenere un aspetto unico. Tuttavia, i prompt molto lunghi non sono sempre migliori. Concentratevi sui concetti principali che volete creare.</p><br />
+	  
+		
+		<h5>Grammatica</h5>
+	  
+	  <p>Il Bot di Midjourney non comprende la grammatica, la struttura delle frasi o le parole come gli esseri umani. Anche la scelta delle parole è importante. Sinonimi più specifici funzionano meglio in molte circostanze. Invece di grande, provate con gigantesco, enorme o immenso. Eliminate le parole quando è possibile. Un numero minore di parole significa che ognuna ha un'influenza più potente. Utilizzate virgole, parentesi e trattini per organizzare i vostri pensieri, ma sappiate che il Bot Midjourney non li interpreterà in modo affidabile. Midjourney non considera la capitalizzazione.</p>
+
+<p>Il Modello di Midjourney versione 4 è leggermente migliore di altri modelli nell'interpretare la struttura tradizionale delle frasi.</p><br />
+		
+		
+		<h5>Focalizzati su ciò che vuoi ottenere</h5>
+	  
+	  <p>È meglio descrivere ciò che si vuole invece di ciò che non si vuole. Se si chiede una festa "senza torta", l'immagine probabilmente includerà una torta. Se si desidera assicurarsi che un oggetto non sia presente nell'immagine finale, provare a chiedere in anticipo utilizzando il parametro <code class="code">--no</code>.</p><br />
+		
+		
+		<h5>I dettagli contano</h5>
+	  
+	  <p>Tutto ciò che non è stato detto può sorprendervi. Siate specifici o vaghi quanto volete, ma tutto ciò che tralascerete sarà randomizzato. Essere vaghi è un ottimo modo per ottenere varietà, ma potreste non ottenere i dettagli che desiderate. Cercate di essere chiari su qualsiasi contesto o dettaglio importante per voi. Pensate a:</p><br />
+		
+		
+		<p>
+      <ul  style="padding-left:30px">
+        <li><strong>Soggetto</strong>: persona, animale, personaggio, luogo, oggetto, ecc.</li>
+        <li><strong>Mezzo</strong>: foto, dipinto, illustrazione, scultura, scarabocchio, arazzo, ecc.</li>
+        <li><strong>Ambiente</strong>: interno, esterno, sulla luna, a Narnia, sott'acqua, nella Città di Smeraldo, ecc.</li>
+		  <li><strong>Illuminazione</strong>: morbida, ambientale, nuvolosa, al neon, luci di studio, ecc.</li>
+		  <li><strong>Colore</strong>: vivace, tenue, luminoso, monocromatico, colorato, bianco e nero, pastello, ecc.</li>
+		  <li><strong>Stato d'animo</strong>: sedato, calmo, rauco, energico, ecc.</li>
+		  <li><strong>Composizione</strong>: Ritratto, foto di testa, primo piano, vista dall'alto, ecc.</li>
+      </ul>
+      </p><br />
+
+	
+	  <h5>Usa sostantivi specifici</h5>
+	  
+	  <p>Le parole plurali lasciano molto al caso. Provate con numeri specifici. "<em>Tre gatti</em>" è più specifico di "<em>gatti</em>". Anche i sostantivi collettivi funzionano: "<em>stormo di uccelli</em>" invece di "<em>uccelli</em>".</p><br />
+	  
+	  </div>
+	  
+	  
+	  
+	  
+    
+    <!-- MENU -->
+    
+    <div id="column2"></div>
+    
+    <!-- FINE MENU --> 
+    
+  </div>
+  <div id="footer">
+    <p>Copyright &copy;2023 Miss Shelley</p>
+  </div>
+</div>
+
+
+
+<script src="menu.js"> </script>
+</body>
+</html>
